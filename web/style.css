@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #202020;
+}
+
+.mainpage {
+    padding: 20px;
+}
+
+.centrecolumn {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.innercolumn {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.relatedwebsites {
+    padding: 20px;
+    background-color: #F4F4F4;
+    color: #000000;
+}
+
+@media (min-width: 400px) {
+    .mainpage {
+        padding: 40px;
+    }
+    .relatedwebsites {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 700px) {
+    .mainpage {
+        padding: 70px;
+    }
+    .relatedwebsites {
+        padding: 70px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 27px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h1, h2, h3, p, ul {
+    margin: 20px 0px;
+}
+
+a {
+    color: #105ecc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h3, p, ul {
+        margin: 27px 0px;
+    }
+}
+
+.viewlinks {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    h2 {
+        margin: 40px 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .viewlinks {
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 1400px) {}
+
+.relatedwebsites h3 {
+    margin: 1em 0em;
+}
+
+.website-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.website-card {
+    margin: 0px 0px 20px 0px;
+}
+
+.website-card h4 {
+    font-weight: normal;
+    margin: 0em;
+}
+
+.website-card p {
+    font-size: 14px;
+    margin: 1em 0em;
+    text-align: justify;
+}
+
+@media (min-width:700px) {
+    .website-cards {
+        flex-direction: row;
+    }
+    .website-card {
+        margin: 0px 40px 40px 0px;
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width:1000px) {
+    .website-card p {
+        font-size: 17px;
+    }
+}

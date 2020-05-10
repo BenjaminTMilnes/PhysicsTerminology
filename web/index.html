@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="PhysicsTerminology" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+    <title>Physics Terminology</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body>
+    <div class="mainpage">
+        <div class="centrecolumn">
+            <h1><a href="#/" title="Physics Terminology">Physics Terminology</a></h1>
+            <div ng-view autoscroll="true"></div>
+        </div>
+    </div>
+    <div class="relatedwebsites">
+        <div class="centrecolumn">
+            <h3>Related physics websites</h3>
+            <div class="website-cards">
+                <div class="website-card">
+                    <h4><a href="http://www.physicsformulae.com" title="Physics Formulae">Physics Formulae</a></h4>
+                    <p><a href="http://www.physicsformulae.com" title="Physics Formulae">Physics Formulae</a> is a formulary of physics.</p>
+                </div>
+                <div class="website-card">
+                    <h4><a href="http://www.physicsunitconversions.com" title="Physics Unit Conversions">Physics Unit Conversions</a></h4>
+                    <p><a href="http://www.physicsunitconversions.com" title="Physics Unit Conversions">Physics Unit Conversions</a> is a fast and minimalistic web-app for converting units in physics.</p>
+                </div>
+                <div class="website-card">
+                    <h4><a href="http://www.ultraphysics.co.uk" title="Ultraphysics">Ultraphysics</a></h4>
+                    <p><a href="http://www.ultraphysics.co.uk" title="Ultraphysics">Ultraphysics</a> is a small website where you can download lecture notes on various topics in physics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
