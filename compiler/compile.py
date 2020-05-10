@@ -42,29 +42,36 @@ class Compiler (object):
             term["URLReference"] = term["Reference"].lower()
             term["Text"] = lines[1]
             term["IPA"] = lines[2]
-            term["ShortDescription"] = lines[4]
-            term["LongDescription"] = lines[5]
 
             t = lines[3].split(";")
 
             if t[0] == "noun":
                 term["PartOfSpeech"] = "noun"
 
-                if t[1].strip().startswith("plural:"):
-                    plural = t[1].strip()[7:].strip()
-                    term["Plural"] = plural
+                for u in t[1:]:
+                    if u.strip().startswith("plural:"):
+                        plural = u.strip()[7:].strip()
+                        term["Plural"] = plural
+                    if u.strip().startswith("adjectival:"):
+                        adjectivalForm = u.strip()[11:].strip()
+                        term["AdjectivalForm"] = adjectivalForm
+                        
+            if len(lines) > 4:
 
-            lines = lines[6:]
-            section = ""
+                term["ShortDescription"] = lines[4]
+                term["LongDescription"] = lines[5]
 
-            for line in lines:
-                if line.startswith("etymology:"):
-                    section = "etymology"
-                    continue
+                lines = lines[6:]
+                section = ""
 
-                if section == "etymology":
-                    term["Etymology"] = self.addItalicTags(line.strip())
-                    section = ""
+                for line in lines:
+                    if line.startswith("etymology:"):
+                        section = "etymology"
+                        continue
+
+                    if section == "etymology":
+                        term["Etymology"] = self.addItalicTags(line.strip())
+                        section = ""
 
             return term
 

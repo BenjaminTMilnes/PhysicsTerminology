@@ -1,14 +1,33 @@
 {
     "Terms": [
         {
+            "Reference": "boson",
+            "URLReference": "boson",
+            "Text": "boson",
+            "IPA": "-",
+            "PartOfSpeech": "noun",
+            "Plural": "bosons",
+            "AdjectivalForm": "bosonic"
+        },
+        {
+            "Reference": "fermion",
+            "URLReference": "fermion",
+            "Text": "fermion",
+            "IPA": "-",
+            "PartOfSpeech": "noun",
+            "Plural": "fermions",
+            "AdjectivalForm": "fermionic"
+        },
+        {
             "Reference": "photon",
             "URLReference": "photon",
             "Text": "photon",
             "IPA": "f\u00c9\u2122\u00ca\u0160\u00cc\u00aft\u00c9\u201dn",
-            "ShortDescription": "a massless, electrically neutral particle that mediates the electromagnetic interaction",
-            "LongDescription": "The photon is a massless, electrically neutral particle that mediates the electromagnetic interaction.",
             "PartOfSpeech": "noun",
             "Plural": "photons",
+            "AdjectivalForm": "photonic",
+            "ShortDescription": "a massless, electrically neutral particle that mediates the electromagnetic interaction",
+            "LongDescription": "The photon is a massless, electrically neutral particle that mediates the electromagnetic interaction.",
             "Etymology": "from Greek <i>photo-</i>, combining form of <i>phos</i>, meaning 'light', and <i>-on</i>, the suffix for particle names"
         }
     ]
