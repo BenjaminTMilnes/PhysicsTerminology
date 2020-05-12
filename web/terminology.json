@@ -7,7 +7,9 @@
             "IPA": "-",
             "PartOfSpeech": "noun",
             "Plural": "bosons",
-            "AdjectivalForm": "bosonic"
+            "AdjectivalForm": "bosonic",
+            "ShortDescription": "any particle that has integer spin",
+            "LongDescription": "A boson is any particle that has integer spin."
         },
         {
             "Reference": "fermion",
@@ -16,7 +18,9 @@
             "IPA": "-",
             "PartOfSpeech": "noun",
             "Plural": "fermions",
-            "AdjectivalForm": "fermionic"
+            "AdjectivalForm": "fermionic",
+            "ShortDescription": "any particle that has half-integer spin",
+            "LongDescription": "A fermion is any particle that has half-integer spin."
         },
         {
             "Reference": "photon",
