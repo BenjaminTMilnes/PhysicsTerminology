@@ -1,0 +1,19 @@
+<div class="term">
+    <div class="term-text">
+        {{term.Text}}
+        <span ng-show="term.IPA == ''" class="term-ipa">{{term.IPA}}</span>
+    </div>
+
+    <div class="term-properties">
+        [<span ng-show="term.PartOfSpeech == 'noun'">noun, plural <i>{{term.Plural}}</i>, adjectival <i>{{term.AdjectivalForm}}</i></span>]
+    </div>
+
+    <div class="term-longdescription">
+        {{term.LongDescription}}
+    </div>
+
+    <div ng-show="term.Etymology != undefined" class="term-etymology">
+        <h2>Etymology</h2>
+        <p compile="term.Etymology"></p>
+    </div>
+</div>

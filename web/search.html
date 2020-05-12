@@ -1,6 +1,6 @@
 <div>
-    <div ng-repeat="term in terms">
-        <div>{{term.Text}}</div>
-          <div>{{term.ShortDescription}}</div>
+    <div ng-repeat="term in terms" class="searchresult-term">
+        <div class="searchresult-term-text"><a href="#/term/{{term.URLReference}}">{{term.Text}}</a></div>
+        <div class="searchresult-term-shortdescription">{{term.ShortDescription}}</div>
     </div>
 </div>

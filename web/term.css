@@ -1,0 +1,33 @@
+.term-text {
+    font-family: "Merriweather", serif;
+    font-size: 3em;
+    margin: 1.5em 0em 0em 0em;
+}
+
+.term-ipa {
+    color: #C0C0C0;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.term-properties {
+    color: #707070;
+    margin: 0.5em 0em 0em 0em;
+}
+
+.term-longdescription {
+    max-width: 40em;
+    box-sizing: border-box;
+    margin: 2em 0em 0em 5em;
+}
+
+.term h2 {
+    text-align: left;
+    font-size: 1.7em;
+}
+
+.term-etymology {
+    max-width: 40em;
+    box-sizing: border-box;
+    margin: 0em 0em 0em 5em;
+}

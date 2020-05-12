@@ -32,7 +32,7 @@ class Compiler (object):
 
     def compileTerm(self, filePath):
 
-        with open(filePath, "r") as fileObject:
+        with open(filePath, "r", encoding="utf-8") as fileObject:
             lines = fileObject.readlines()
             lines = [l.strip() for l in lines if l.strip() != ""]
 
@@ -87,10 +87,10 @@ class Compiler (object):
 
         print(data)
 
-        with open("../data/compiled.json", "w") as fileObject:
+        with open("../data/compiled.json", "w", encoding="utf-8") as fileObject:
             json.dump(data, fileObject, indent=4)
 
-        with open("../web/terminology.json", "w") as fileObject:
+        with open("../web/terminology.json", "w", encoding="utf-8") as fileObject:
             json.dump(data, fileObject, indent=4)
 
 

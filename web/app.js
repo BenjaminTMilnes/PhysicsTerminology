@@ -2,7 +2,8 @@ var application = angular.module("PhysicsTerminology", ["ngRoute", "ngSanitize"]
 
 application.config(function ($routeProvider) {
     $routeProvider
-        .when("/", { templateUrl: "search.html", controller: "SearchController" });
+        .when("/", { templateUrl: "search.html", controller: "SearchController" })
+        .when("/term/:reference", { templateUrl: "term.html", controller: "TermController" });
 });
 
 application.directive("mathematics", function () {
@@ -38,6 +39,10 @@ class Database {
     constructor(data) {
         this._data = data;
     }
+
+    getTermWithURLReference(urlReference){
+        return this._data.Terms.filter(t => t.URLReference == urlReference)[0];
+    }
 }
 
 application.factory("dataService", ["$http", function ($http) {
@@ -68,6 +73,16 @@ application.controller("SearchController", ["$scope", "dataService", "$location"
 
     dataService.getData().then(function (database) {
         $scope.terms = database._data.Terms;
+    });
+
+}]);
+
+
+application.controller("TermController", ["$scope", "$routeParams", "dataService", "$location", function TermController($scope, $routeParams, dataService, $location) {
+
+    dataService.getData().then(function (database) {
+        $scope.terms = database._data.Terms;
+        $scope.term = database.getTermWithURLReference($routeParams.reference);
     });
 
 }]);
