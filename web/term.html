@@ -1,19 +1,29 @@
 <div class="term">
     <div class="term-text">
         {{term.Text}}
-        <span ng-show="term.IPA == ''" class="term-ipa">{{term.IPA}}</span>
+        <span ng-show="term.IPA != ''" class="term-ipa" style="display: none;">{{term.IPA}}</span>
     </div>
 
     <div class="term-properties">
         [<span ng-show="term.PartOfSpeech == 'noun'">noun, plural <i>{{term.Plural}}</i>, adjectival <i>{{term.AdjectivalForm}}</i></span>]
     </div>
 
-    <div class="term-longdescription">
-        {{term.LongDescription}}
+    <div class="term-longdescription" compile="term.LongDescription">
     </div>
 
-    <div ng-show="term.Etymology != undefined" class="term-etymology">
+    <div ng-show="term.Etymology != ''" class="term-etymology">
         <h2>Etymology</h2>
-        <p compile="term.Etymology"></p>
+        <div compile="term.Etymology"></div>
+    </div>
+
+    <div class="term-seemore">
+        <h2>See more</h2>
+        <ul>
+            <li ng-show="term.WikipediaURL != undefined">Wikipedia - <a href="{{term.WikipediaURL}}" title="Wikipedia" target="_blank">{{term.WikipediaURL}}</a></li>
+        </ul>
+        <p>
+            The original .term file that this page was generated from can be viewed at
+            <a href="https://github.com/BenjaminTMilnes/PhysicsTerminology/blob/master/data/{{term.Reference}}.term" target="_blank">https://github.com/BenjaminTMilnes/PhysicsTerminology/blob/master/data/{{term.Reference}}.term</a>
+        </p>
     </div>
 </div>

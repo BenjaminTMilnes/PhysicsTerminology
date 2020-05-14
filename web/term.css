@@ -26,7 +26,7 @@
     font-size: 1.7em;
 }
 
-.term-etymology {
+.term-etymology , .term-seemore{
     max-width: 40em;
     box-sizing: border-box;
     margin: 0em 0em 0em 5em;

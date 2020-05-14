@@ -41,9 +41,8 @@ class Compiler (object):
             term["Reference"] = lines[0]
             term["URLReference"] = term["Reference"].lower()
             term["Text"] = lines[1]
-            term["IPA"] = lines[2]
 
-            t = lines[3].split(";")
+            t = lines[2].split(";")
 
             if t[0] == "noun":
                 term["PartOfSpeech"] = "noun"
@@ -55,24 +54,45 @@ class Compiler (object):
                     if u.strip().startswith("adjectival:"):
                         adjectivalForm = u.strip()[11:].strip()
                         term["AdjectivalForm"] = adjectivalForm
-                        
-            if len(lines) > 4:
 
-                term["ShortDescription"] = lines[4]
-                term["LongDescription"] = lines[5]
+            if len(lines) > 3:
 
-                lines = lines[6:]
+                term["ShortDescription"] = lines[3]
+                term["LongDescription"] = ""
+                term["Etymology"] = ""
+
+                lines = lines[4:]
                 section = ""
 
                 for line in lines:
+                    if line.startswith("description:"):
+                        section = "description"
+                        continue
+
                     if line.startswith("etymology:"):
                         section = "etymology"
                         continue
-
-                    if section == "etymology":
-                        term["Etymology"] = self.addItalicTags(line.strip())
+                    
+                    if line.startswith("ipa:"):
+                        section = ""
+                    
+                    if line.startswith("wikipedia:"):
                         section = ""
 
+                    if section == "description":
+                        term["LongDescription"] += "<p>" + self.addItalicTags(line.strip()) + "</p>"
+
+                    if section == "etymology":
+                        term["Etymology"] += "<p>" + self.addItalicTags(line.strip()) + "</p>"
+
+                    if line.startswith("ipa:"):
+                        ipa = line[4:].strip()
+                        term["IPA"] = ipa
+
+                    if line.startswith("wikipedia:"):
+                        url = line[10:].strip()
+                        term["WikipediaURL"] = url
+                        
             return term
 
     def compile(self):

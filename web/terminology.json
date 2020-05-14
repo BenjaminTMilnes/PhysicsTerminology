@@ -1,38 +1,87 @@
 {
     "Terms": [
         {
+            "Reference": "baryon",
+            "URLReference": "baryon",
+            "Text": "baryon",
+            "PartOfSpeech": "noun",
+            "Plural": "baryons",
+            "AdjectivalForm": "baryonic",
+            "ShortDescription": "a type of particle that consists of three quarks",
+            "LongDescription": "<p>A baryon is any particle that consists of exactly three quarks.</p>",
+            "Etymology": "",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Baryon"
+        },
+        {
             "Reference": "boson",
             "URLReference": "boson",
             "Text": "boson",
-            "IPA": "-",
             "PartOfSpeech": "noun",
             "Plural": "bosons",
             "AdjectivalForm": "bosonic",
             "ShortDescription": "any particle that has integer spin",
-            "LongDescription": "A boson is any particle that has integer spin."
+            "LongDescription": "<p>A boson is any particle that has integer spin.</p>",
+            "Etymology": ""
         },
         {
             "Reference": "fermion",
             "URLReference": "fermion",
             "Text": "fermion",
-            "IPA": "-",
             "PartOfSpeech": "noun",
             "Plural": "fermions",
             "AdjectivalForm": "fermionic",
             "ShortDescription": "any particle that has half-integer spin",
-            "LongDescription": "A fermion is any particle that has half-integer spin."
+            "LongDescription": "<p>A fermion is any particle that has half-integer spin.</p>",
+            "Etymology": ""
+        },
+        {
+            "Reference": "hadron",
+            "URLReference": "hadron",
+            "Text": "hadron",
+            "PartOfSpeech": "noun",
+            "Plural": "hadrons",
+            "AdjectivalForm": "hadronic",
+            "ShortDescription": "a type of particle that consists of two or more quarks or antiquarks",
+            "LongDescription": "<p>A hadron is any particle that consists of two or more quarks or antiquarks.</p>",
+            "Etymology": "",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Hadron"
+        },
+        {
+            "Reference": "hyperon",
+            "URLReference": "hyperon",
+            "Text": "hyperon",
+            "PartOfSpeech": "noun",
+            "Plural": "hyperons",
+            "AdjectivalForm": "hyperonic",
+            "ShortDescription": "a type of baryon that contains one or more strange quarks, but no charm, top, or bottom quarks",
+            "LongDescription": "<p>A hyperon is any baryon that contains one or more strange quarks, but no charm, top, or bottom quarks.</p>",
+            "Etymology": "",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Hyperon"
+        },
+        {
+            "Reference": "meson",
+            "URLReference": "meson",
+            "Text": "meson",
+            "PartOfSpeech": "noun",
+            "Plural": "mesons",
+            "AdjectivalForm": "mesonic",
+            "ShortDescription": "a type of particle that consists of one quark and one antiquark",
+            "LongDescription": "<p>A meson is any particle that consists of one quark and one antiquark.</p>",
+            "Etymology": "",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Meson"
         },
         {
             "Reference": "photon",
             "URLReference": "photon",
             "Text": "photon",
-            "IPA": "f\u0259\u028a\u032ft\u0254n",
             "PartOfSpeech": "noun",
             "Plural": "photons",
             "AdjectivalForm": "photonic",
             "ShortDescription": "a massless, electrically neutral particle that mediates the electromagnetic interaction",
-            "LongDescription": "The photon is a massless, electrically neutral particle that mediates the electromagnetic interaction.",
-            "Etymology": "from Greek <i>photo-</i>, combining form of <i>phos</i>, meaning 'light', and <i>-on</i>, the suffix for particle names"
+            "LongDescription": "<p>The photon is a massless, electrically neutral particle that mediates the electromagnetic interaction.</p>",
+            "Etymology": "<p>from Greek <i>photo-</i>, combining form of <i>phos</i>, meaning 'light', and <i>-on</i>, the suffix for particle names</p>",
+            "IPA": "f\u0259\u028a\u032ft\u0254n",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Photon"
         }
     ]
 }
